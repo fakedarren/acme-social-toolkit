@@ -1,0 +1,62 @@
+@mixin lte-small-screen {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin gte-medium-screen {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin gte-large-screen {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+
+:root {
+  // Breakpoints
+  --medium-screen-breakpoint: 768px;
+  --large-screen-breakpoint: 1024px;
+
+  // Colors / Colours
+  --color-1: #dd2f31;
+  --color-2: #e9e635;
+  --color-3: #1c921a;
+  --color-4: #389dd5;
+  --color-5: #9457db;
+  
+  --color-white: #eaeaea;
+  --color-grey: #c5c5c5;
+  --color-black: #010101;
+
+  // Sizes
+  --header-height: 6rem;
+  --footer-height: 5rem;
+
+  @include lte-small-screen {
+    --header-height: 4rem;
+    --footer-height: auto;
+  }
+
+  --right-column-width: 25rem;
+
+  // Shares
+  --share-preview-bg: #f2f3f5;
+  --share-preview-border: #ccc;
+  --share-preview-text-1: #4b4f56;
+  --share-preview-text-2: #606770;
+  --share-preview-facebook: #3b5998;
+  --share-preview-twitter: #00aced;
+  --share-preview-whatsapp: #25d366;
+}

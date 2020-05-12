@@ -1,0 +1,26 @@
+.tool-shares-list {
+  display: flex;
+}
+
+.tool-share {
+  flex: 1;
+}
+
+.tool-share-button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: block;
+  height: 0;
+  opacity: 0.5;
+  padding-bottom: 52.5%;
+  width: 100%;
+
+  &--selected {
+    opacity: 1;
+  }
+}
+
+.tool-share-image {
+  display: block;
+  width: 100%;
+}

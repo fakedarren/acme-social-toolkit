@@ -1,0 +1,118 @@
+@import '../../App';
+
+
+// Reset
+* { box-sizing: border-box; }
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul[class], ul[class] li,
+ol[class], ol[class] li,
+button {
+  background: 0;
+  border: 0;
+  list-style: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Typography
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.6rem;
+}
+
+p a { color: inherit; }
+
+
+// Layout
+.main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  padding: 1rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.tool-component-wrapper {
+  @include gte-medium-screen {
+    display: flex;
+  }
+
+  + .tool-component-wrapper {
+
+    @include lte-small-screen {
+      border-top: 0.5rem solid var(--color-grey);
+    }
+  }
+}
+
+.tool-component {
+
+  + .tool-component {
+
+    @include lte-small-screen {
+      border-top: 0.5rem solid var(--color-grey);
+    }
+  }
+}
+
+.tool-shares {
+  padding: 1rem 0.5rem;
+
+  @include gte-medium-screen {
+    border-top: 0.5rem solid var(--color-grey);
+    flex: 1; 
+  }
+}
+
+.tool-swatches {
+  padding: 1rem 0;
+
+  @include gte-medium-screen {
+    border-top: 0.5rem solid var(--color-grey);
+    width: var(--right-column-width);
+  }
+}
+
+.tool-choice {
+  padding: 1rem 0.5rem;
+
+  @include gte-medium-screen {
+    border-bottom: 0.5rem solid var(--color-grey);
+    border-top: 0.5rem solid var(--color-grey);
+    flex: 1;
+  }
+}
+
+.tool-actions {
+  padding: 1rem 0.5rem;
+
+  @include gte-medium-screen {
+    border-bottom: 0.5rem solid var(--color-grey);
+    border-top: 0.5rem solid var(--color-grey);
+    width: var(--right-column-width);
+  }
+}
+
+
+// Blurb
+.tool-blurb {
+  padding: 1rem 0 ;
+
+  @include lte-small-screen {
+    padding: 1rem 0.5rem;
+  }
+
+  p { padding-top: 1rem; }
+}

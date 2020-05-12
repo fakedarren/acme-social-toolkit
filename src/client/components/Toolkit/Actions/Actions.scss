@@ -1,0 +1,40 @@
+.tool-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .tool-action {
+    margin-bottom: 1rem;
+  }
+}
+
+.tool-action-button {
+  border: 0.4rem solid var(--color-1);
+  border-radius: 2.2rem;
+  cursor: pointer;
+  display: block;
+  height: 4.4rem;
+  line-height: calc(4.4rem - 0.4rem - 0.4rem);
+  width: 100%;
+
+  &--selected {
+    background-color: var(--color-1);
+    color: var(--color-white);
+  }
+}
+
+.tool-action-description {
+  padding-bottom: 1rem;
+}
+
+.tool-action-choose {
+  background: var(--color-1);
+  border-radius: 1rem;
+  color: var(--color-white);
+  cursor: pointer;
+  display: block;
+  font-size: 3.2rem;
+  height: 8.8rem;
+  line-height: 8.8rem;
+  width: 100%;
+}

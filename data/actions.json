@@ -1,0 +1,32 @@
+[
+  {
+    "cta": "Raise some funds",
+    "description": "Encourage people to donate to the campaign",
+    "redirect": "https://acme.inc?utm_source=social&utm_medium=toolkit&utm_campaign=donate",
+    "share": {
+      "headline": "Headline for 'raise funds'",
+      "description": "Raise some funds? Raise some funds. Raise some funds! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "type": "donate"
+  },
+  {
+    "cta": "Sign up friends",
+    "description": "Encourage people to sign up to receive campaign updates",
+    "redirect": "https://acme.inc?utm_source=social&utm_medium=toolkit&utm_campaign=friends",
+    "share": {
+      "headline": "Headline for 'sign up friends'",
+      "description": "Sign up friends? Sign up friends. Sign up friends! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "type": "friends"
+  },
+  {
+    "cta": "Make some noise",
+    "description": "Just let everyone know you're supporting Acme Inc!",
+    "redirect": "https://acme.inc?utm_source=social&utm_medium=toolkit&utm_campaign=noise",
+    "share": {
+      "headline": "Headline for 'make some noise'",
+      "description": "Make some noise? Make some noise. Make some noise! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "type": "noise"
+  }
+]

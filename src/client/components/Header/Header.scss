@@ -1,0 +1,11 @@
+.header {
+  background: var(--color-1);
+  height: var(--header-height);
+  padding: 1rem 0;
+}
+
+.header-logo {
+  display: block;
+  height: calc(var(--header-height) - 2rem);
+  margin: 0 auto;
+}

@@ -1,0 +1,103 @@
+@import '../../App';
+
+
+.preview {
+  padding: 0 0.5rem;
+}
+
+.preview-wrapper {
+  @include gte-medium-screen {
+    display: flex;
+    padding-top: 1rem;
+
+    .preview-share {
+      margin: 0 1rem 0 0;
+    }
+    .share-options {
+      margin: 0 0 1rem 0;
+      max-width: 400px;
+    }
+  }
+}
+
+.preview-cancel {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.preview-share {
+  background: var(--share-preview-bg);
+  border: 1px solid var(--share-preview-border);
+  color: inherit;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.preview-share-image {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.preview-share-text {
+  padding: 1rem 1.2rem;
+}
+
+.preview-share-url {
+  color: var(--share-preview-text-2);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.preview-share-headline {
+  color: var(--share-preview-text-1);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  @include ellipsis;
+}
+
+.preview-share-description {
+  color: var(--share-preview-text-2);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-top: 0.3rem;
+  @include ellipsis;
+}
+
+.share-options {
+  margin: 0 auto;
+  width: 100%;
+
+  .share-option {
+    margin-bottom: 1rem;
+  }
+}
+
+.share-l_i_n_k {
+  background: var(--color-1);
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &--facebook { background-color: var(--share-preview-facebook); }
+  &--twitter { background-color: var(--share-preview-twitter); }
+  &--whatsapp { background-color: var(--share-preview-whatsapp); }
+}

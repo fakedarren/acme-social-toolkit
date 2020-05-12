@@ -1,0 +1,66 @@
+[
+  {
+    "name": "1",
+    "variations": [
+      {
+        "name": "1",
+        "swatch": ["color-1", "color-black"]
+      },
+      {
+        "name": "2",
+        "swatch": ["color-2", "color-white"]
+      },
+      {
+        "name": "3",
+        "swatch": ["color-3", "color-white"]
+      },
+      {
+        "name": "4",
+        "swatch": ["color-4", "color-white"]
+      },
+      {
+        "name": "5",
+        "swatch": ["color-5", "color-white"]
+      }
+    ]
+  },
+  {
+    "name": "2",
+    "variations": [
+      {
+        "name": "1",
+        "swatch": ["color-1", "color-white"]
+      }
+    ]
+  },
+  {
+    "name": "3",
+    "variations": [
+      {
+        "name": "1",
+        "swatch": ["color-1", "color-white"]
+      },
+      {
+        "name": "2",
+        "swatch": ["color-white", "color-1"]
+      },
+      {
+        "name": "3",
+        "swatch": ["color-white", "color-5"]
+      }
+    ]
+  },
+  {
+    "name": "4",
+    "variations": [
+      {
+        "name": "1",
+        "swatch": ["color-1", "color-white"]
+      },
+      {
+        "name": "1",
+        "swatch": ["color-white", "color-1"]
+      }
+    ]
+  }
+]
