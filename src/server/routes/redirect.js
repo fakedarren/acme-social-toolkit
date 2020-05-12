@@ -4,13 +4,15 @@ const actions = require('../../../data/actions.json');
 const isRedirect = require('../utils/isRedirect');
 const log = require('../utils/log');
 
-const { DEFAULT_SHARE_REDIRECT } = process.env;
-
 module.exports = {
   configure: (app) => {
-    app.get('/:share/:color/:type', (req, res, next) => {
+    app.get('*', (req, res, next) => {
       if (isRedirect(req)) {
-        const { color, share, type } = req.params;
+        const parts = req.path.split('/');
+
+        const share = parts[1];
+        const color = parts[2];
+        const type = parts[3];
 
         const details = actions.find((action) => action.type === type);
         const image = fs.existsSync(
@@ -25,8 +27,15 @@ module.exports = {
         if (details && image) {
           res.redirect(details.redirect);
         } else {
-          res.redirect(DEFAULT_SHARE_REDIRECT);
+          res.redirect(actions[0].redirect);
         }
+      } else {
+        next();
+      }
+    });
+    app.get('*', (req, res, next) => {
+      if (isRedirect(req)) {
+        res.redirect(actions[0].redirect);
       } else {
         next();
       }
